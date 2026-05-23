@@ -1,20 +1,20 @@
 #include<stdio.h> 
 
-int  PrintEven( int iNo )
+int  DisplayFactors( int iNo )
 {
     int iCnt = 0 ;
     if (iNo <= 0 )
     {
-        printf("Please enter valid number");
-        return -1 ; 
+        iNo =-iNo ;
     }
-
-
   
-    for(iCnt =1 ; iCnt <= iNo; iCnt++)
+
+    for(iCnt =1 ; iCnt <= (iNo/2); iCnt++)
     {
-        printf("%d",2*iCnt);
+        if (( iNo % iCnt ) == 0)   ////
+       { printf("%d\n",iCnt);}   ///
     }
+
 }
 
 
@@ -25,7 +25,7 @@ int main()
     printf("Enter the number:");
     scanf("%d",&iValue);
 
-    PrintEven(iValue);
+    DisplayFactors(iValue);
 
     return 0 ;
 }
