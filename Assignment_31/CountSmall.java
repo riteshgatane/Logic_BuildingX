@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class CountCapital
+class countSmall
 {
     public static void main(String A[])
     {
@@ -23,24 +23,16 @@ class CountCapital
 
         for(i = 0 ; i < Arr.length ; i++)
         {
-            if(Arr[i] == ' ')
+            
+            if(Arr[i] >= 'a' && Arr[i] <= 'z')
             {
-            if(Arr[i+1] >= 'a' && Arr[i+1] <= 'z')
-            {
-                Arr[i+1] = (char)(Arr[i+1] - 32) ;
                 iCount++ ;  
-            }
             }
         }
 
-
         String output = new String(Arr) ; 
 
-        System.out.println("String of Words with First letter capital is : "+output+"  Number of Capital Letter After Conversion is :"+iCount); ; 
-
-
-        
-
+        System.out.println("The Sentence is  : "+output+"  Number of small Letter is :"+iCount); ; 
 
     }
 }
