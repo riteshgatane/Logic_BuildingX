@@ -1,6 +1,6 @@
 // Write a program which accept string from user and count number of small characters. 
-// Input :   “Marvellous” 
-// Output :  9 
+// Input :   “Hello World” 
+// Output :  6
 # include <stdio.h>
 
 int CountSmall(char *str)
